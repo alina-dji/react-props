@@ -2,15 +2,21 @@ import React from 'react';
 import Profile from './profile/Profile';
 
 function App() {
+  const infos = {
+    fullName: "John Doe",
+    profession: "Web Developer",
+    bio: "Cat lover, bookworm, apple pie fanatic and nature enthousiast :)",
+    image: "https://randomuser.me/api/portraits/men/32.jpg" 
+  }
   const handleName = name => alert(name);
   return (
     <div className="App">
       <Profile 
-        fullName="John Doe" 
-        profession="Web Developer"
-        bio="Cat lover, bookworm, apple pie fanatic and nature enthousiast :)"
+        fullName = {infos.fullName} 
+        profession = {infos.profession}
+        bio = {infos.bio}
         handleName={handleName}>
-          https://randomuser.me/api/portraits/men/32.jpg 
+          {infos.image}
       </Profile>
     </div>
   );

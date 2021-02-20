@@ -17,6 +17,8 @@ function Profile(props) {
                 <img 
                     src={props.children}
                     alt="avatar"
+                    width='140'
+                    height='140'
                     style = {imgStyle} >
                 </img>
             </div>
